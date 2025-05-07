@@ -123,7 +123,7 @@ function mostrarModalProcessamento(pedido) {
                             title: 'Pedido enviado!',
                             html: `
                                 <div class="flex flex-col items-center">
-                                    <img src="img/logo.jpg" alt="Dev Burguer Logo" class="w-24 h-24 mb-4">
+                                    <img src="logo-devburguer.ico" alt="Dev Burguer Logo" class="w-24 h-24 mb-4">
                                     <p>Seu pedido foi encaminhado para nosso WhatsApp.</p>
                                     <p class="mt-2 text-sm text-gray-500">Aguarde nosso contato para confirmação</p>
                                 </div>
