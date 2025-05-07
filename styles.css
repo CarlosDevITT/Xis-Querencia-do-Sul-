@@ -519,36 +519,73 @@ img{
 }
 
 
+/* Tela de Carregamento Personalizada */
 .loading-screen {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ffffff; /* Cor de fundo da tela de carregamento */
+  background-color: #8B0000; /* Vermelho escuro do tema */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Certifique-se de que a tela de carregamento esteja acima de tudo */
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-screen.fade-out {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .loader {
-  border: 8px solid #f3f3f3; /* Cor do fundo do loader */
-  border-top: 8px solid #3498db; /* Cor do topo do loader */
+  border: 8px solid rgba(255, 255, 255, 0.1); /* Anel externo sutil */
+  border-top: 8px solid #FFD700; /* Dourado para contraste */
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1s linear infinite; /* Animação de rotação */
+  width: 70px;
+  height: 70px;
+  animation: spin 1.2s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
+.loading-logo {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 30px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.loading-screen p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Animações */
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
 
-.loading-screen p {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333; /* Cor do texto */
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.05); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+/* Efeito de transição quando carregado */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#main-content {
+  animation: fadeIn 0.8s ease-out forwards;
 }

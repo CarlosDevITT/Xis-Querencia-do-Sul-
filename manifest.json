@@ -1,21 +1,60 @@
 {
-    "name": "Xis Querência do Sul",
-    "short_name": "Xis Querência do Sul",
-    "description": "Xis Querência do Sul - Onde cada mordida é uma delícia",
-    "icons": [
-      {
-        "src": "img/about.jpg",
-        "sizes": "192x192",
-         "type": "image/jpg"
-      },
-      {
-        "src": "img/about.jpg",
-        "sizes": "512x512",
-         "type": "image/jpg"
-      }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone",
-    "start_url": "/index.html"
-  }
+  "name": "Xis Querência do Sul",
+  "short_name": "Xis QS",
+  "description": "Xis Querência do Sul - Onde cada mordida é uma delícia",
+  "icons": [
+    {
+      "src": "img/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "img/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#8B0000",
+  "background_color": "#8B0000",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "scope": "/",
+  "orientation": "portrait-primary",
+  "splash_pages": null,
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://xis-querencia-do-sul.netlify.app/"
+    }
+  ]
+}

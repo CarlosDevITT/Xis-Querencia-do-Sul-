@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="img/ab2.jpg" type="image/x-icon">
         <link rel="manifest" href="manifest.json">
+         <!-- Meta tags PWA -->
+         <meta name="mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-capable" content="yes">
+         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+         <meta name="apple-mobile-web-app-title" content="Xis QS">
         <!--========== BOX ICONS ==========-->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -17,12 +22,32 @@
   <!-- Tela de Carregamento -->
 
   <div id="loading-screen" class="loading-screen">
-
-        <div class="loader"></div>
-
-        <p>Carregando...</p>
-
-    </div>
+    <!-- Adicione sua logo se quiser -->
+    <img src="img/ab2.jpg" alt="Xis Querência do Sul" class="loading-logo">
+    
+    <div class="loader"></div>
+    
+    <p>Carregando ...</p>
+  </div>
+  
+  <div id="main-content" style="display: none;">
+    <!-- Todo o restante do seu conteúdo aqui -->
+  </div>
+  
+  <script>
+    // Simular carregamento (substitua pelo seu carregamento real)
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.getElementById('loading-screen').classList.add('fade-out');
+        document.getElementById('main-content').style.display = 'block';
+        
+        // Remove completamente após a animação
+        setTimeout(function() {
+          document.getElementById('loading-screen').remove();
+        }, 500);
+      }, 1500); // Tempo mínimo de exibição
+    });
+  </script>
     <!-- Conteúdo Principal -->
 
     <div id="main-content" style="display: none;">
@@ -224,8 +249,6 @@
         });
       </script>
       
-      
-
       <!--========== FOOTER ==========-->
         <footer class="footer section bd-container">
                 <div class="footer__container bd-grid">
@@ -273,11 +296,169 @@
                 <p class="footer__copy">&#169; Todos os direitos reservados</p>
         </footer>
 
+  <!-- Scripts PWA -->
+   <script>
+    // Registrar Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('ServiceWorker registrado com sucesso:', registration.scope);
+                    
+                    // Verificar atualizações
+                    registration.addEventListener('updatefound', () => {
+                        const newWorker = registration.installing;
+                        newWorker.addEventListener('statechange', () => {
+                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                showUpdateNotification();
+                            }
+                        });
+                    });
+                })
+                .catch(err => {
+                    console.log('Falha no registro do ServiceWorker:', err);
+                });
+        });
+    }
+
+    // Mostrar notificação de atualização
+    function showUpdateNotification() {
+        if ('Notification' in window && Notification.permission === 'granted') {
+            const options = {
+                body: 'Nova versão disponível! Clique para atualizar.',
+                icon: '/img/icons/icon-192x192.png',
+                badge: '/img/icons/icon-72x72.png'
+            };
+            
+            const notification = new Notification('Xis Querência do Sul', options);
+            
+            notification.onclick = () => {
+                window.location.reload();
+            };
+        }
+    }
+
+    // Gerenciar carregamento do PWA
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            document.getElementById('app-loading').style.display = 'none';
+            document.getElementById('app-content').style.display = 'block';
+            
+            // Verificar se está offline
+            if (!navigator.onLine) {
+                showOfflineNotification();
+            }
+            
+            // Ouvir eventos de conexão
+            window.addEventListener('online', () => {
+                hideOfflineBanner();
+            });
+            
+            window.addEventListener('offline', () => {
+                showOfflineNotification();
+            });
+        }, 1500); // Tempo mínimo de exibição do splash screen
+    });
+
+    // Mostrar banner offline
+    function showOfflineNotification() {
+        const offlineBanner = document.createElement('div');
+        offlineBanner.id = 'offline-banner';
+        offlineBanner.innerHTML = `
+            <i class='bx bx-wifi-off'></i>
+            <span>Você está offline. Algumas funcionalidades podem estar limitadas.</span>
+        `;
+        document.body.prepend(offlineBanner);
+    }
+
+    // Esconder banner offline
+    function hideOfflineBanner() {
+        const banner = document.getElementById('offline-banner');
+        if (banner) {
+            banner.remove();
+            
+            // Mostrar notificação de reconexão
+            if ('Notification' in window && Notification.permission === 'granted') {
+                new Notification('Xis Querência do Sul', {
+                    body: 'Conectado novamente! Todas as funcionalidades estão disponíveis.',
+                    icon: '/img/icons/icon-192x192.png'
+                });
+            }
+        }
+    }
+   </script>
+
+        <!-- Inicializar notificações -->
+        <script>
+            // Inicializar notificações quando o app estiver pronto
+            document.addEventListener('DOMContentLoaded', () => {
+                if ('Notification' in window) {
+                    Notification.requestPermission().then(permission => {
+                        if (permission === 'granted') {
+                            console.log('Permissão para notificações concedida');
+                            checkRestaurantStatus();
+                        }
+                    });
+                }
+                
+                // Verificar status do restaurante a cada hora
+                setInterval(checkRestaurantStatus, 60 * 60 * 1000);
+            });
+            
+            function checkRestaurantStatus() {
+                const now = new Date();
+                const hour = now.getHours();
+                const day = now.getDay(); // 0=Domingo, 6=Sábado
+                
+                // Restaurante aberto das 18h às 22h (exceto domingo)
+                if (day !== 0 && hour >= 18 && hour < 22) {
+                    showNotification(
+                        'Xis Querência do Sul', 
+                        'Estamos abertos! Venha saborear nossos xis!'
+                    );
+                } else if (day !== 0 && hour === 17) {
+                    // Notificação 1h antes de abrir
+                    showNotification(
+                        'Xis Querência do Sul', 
+                        'Abre em 1 hora! Prepare-se para o melhor xis da região!'
+                    );
+                } else if (day !== 0 && hour === 21 && now.getMinutes() >= 30) {
+                    // Notificação 30min antes de fechar
+                    showNotification(
+                        'Xis Querência do Sul', 
+                        'Última chance! Fechamos em 30 minutos!'
+                    );
+                }
+            }
+            
+            function showNotification(title, body) {
+                if ('Notification' in window && Notification.permission === 'granted') {
+                    const options = {
+                        body: body,
+                        icon: '/img/icons/icon-192x192.png',
+                        badge: '/img/icons/icon-72x72.png',
+                        vibrate: [200, 100, 200]
+                    };
+                    
+                    // Mostrar notificação via Service Worker se possível
+                    if ('serviceWorker' in navigator) {
+                        navigator.serviceWorker.ready.then(registration => {
+                            registration.showNotification(title, options);
+                        });
+                    } else {
+                        new Notification(title, options);
+                    }
+                }
+            }
+        </script>
+
         <!--========== SCROLL REVEAL ==========-->
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--========== MAIN JS ==========-->
         <script src="main.js"></script>
         <script src="script.js"></script> 
+        <script src="app.js"></script> 
+        <script src="service-worker.js"></script> 
     </body>
 </html>
