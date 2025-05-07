@@ -1,0 +1,192 @@
+[
+    {
+        "id": "abrigo-01",
+        "titulo": "Xis salada - grande",
+        "imagen": "./img/abrigos/Xis salada - grande.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio":  33
+    },
+    {
+        "id": "Abrigo 02 ",
+        "titulo": "Xis alcatra com 4 queijos - grande",
+        "imagen": "./img/abrigos/02.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio": 47
+    },
+    {
+        "id": "Abrigo 03 ",
+        "titulo": "Xis bacon com calabresa - grande",
+        "imagen": "./img/abrigos/03.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio": 46
+    },
+    {
+        "id": "Abrigo 04",
+        "titulo": "Xis coração - grande",
+        "imagen": "./img/abrigos/04.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio": 41
+    },
+    {
+        "id": " Abrigo 05",
+        "titulo": "Xis costela desfiada - grande",
+        "imagen": "./img/abrigos/05.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio": 46
+    },
+    {
+        "id": "Abrigo 06",
+        "titulo": "Xis frango - grande",
+        "imagen": "./img/abrigos/grande.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio":  31
+    },
+    {
+        "id": "Abrigo 06",
+        "titulo": "Xis pia kids com fritas",
+        "imagen": "./img/abrigos/08.jpg",
+        "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+        },
+        "precio": 29
+    },
+    {
+        "id": "camiseta-01",
+        "titulo": "Dog tradicional",
+        "imagen": "./img/camisetas/01.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio": 22
+    },
+    {
+        "id": "camiseta-02",
+        "titulo": "Dog prensado acebolado",
+        "imagen": "./img/camisetas/02.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio":  24
+    },
+    {
+        "id": "camiseta-03",
+        "titulo": "Dog prensado com bacon",
+        "imagen": "./img/camisetas/03.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio": 27
+    },
+    {
+        "id": "camiseta-04",
+        "titulo": "Dog prensado com calabresa",
+        "imagen": "./img/camisetas/04.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio": 27
+    },
+    {
+        "id": "camiseta-05",
+        "titulo": "Dog com linguiça apimentada",
+        "imagen": "./img/camisetas/05.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio": 29
+    },
+    {
+        "id": "camiseta-06",
+        "titulo": "Dog com linguiça blumenau",
+        "imagen": "./img/camisetas/06.jpg",
+        "categoria": {
+            "nombre": "Cachorro quente prensado",
+            "id": "camisetas"
+        },
+        "precio": 29
+    },
+    {
+        "id": "pantalon-01",
+        "titulo": "COCA COLA 2 LITROS ",
+        "imagen": "./img/pantalones/01.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 19
+    },
+    {
+        "id": "pantalon-02",
+        "titulo": "COCA COLA 2 LITROS ZERO ",
+        "imagen": "./img/pantalones/02.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 18
+    },
+    {
+        "id": "pantalon-03",
+        "titulo": "GUARANA 2 LITROS",
+        "imagen": "./img/pantalones/03.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 14
+    },
+    {
+        "id": "pantalon-04",
+        "titulo": "Batata frita corte caseiro 300g",
+        "imagen": "./img/pantalones/04.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 21
+    },
+    {
+        "id": "pantalon-05",
+        "titulo": "Batata frita corte caseiro 600g",
+        "imagen": "./img/pantalones/05.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 33
+    },
+    {
+        "id": "pantalon-06",
+        "titulo": "Polenta frita 500g",
+        "imagen": "./img/pantalones/06.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 21
+    }
+]
