@@ -13,7 +13,7 @@ const botonComprar = document.querySelector("#carrito-acciones-comprar");
 function restauranteAberto() {
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 8 && hora < 22; // Aberto das 18h às 22h
+    return hora >= 18 && hora < 22; // Aberto das 18h às 22h
 }
 
 // Função para formatar valor monetário
@@ -26,7 +26,7 @@ function formatarMoeda(valor) {
 
 // Função para gerar mensagem do pedido para WhatsApp
 function gerarMensagemWhatsApp(pedido) {
-    let mensagem = `*Pedido xis querencia do sul* 🍔\n\n`;
+    let mensagem = `*Pedido Xis querencia do sul* 🍔\n\n`;
     mensagem += `*Itens do pedido:*\n`;
     
     pedido.itens.forEach(item => {
@@ -34,7 +34,9 @@ function gerarMensagemWhatsApp(pedido) {
     });
     
     mensagem += `\n*Total:* ${formatarMoeda(pedido.total)}\n`;
+    mensagem += `\n*Observação :*\n[ALGUMA OBSERVAÇÃO ?]`;
     mensagem += `\n*Endereço de entrega:*\n[INSIRA O ENDEREÇO AQUI]`;
+    mensagem += `\n*Forma de Pagamento:*\n[ INSIRA A FORMA DE PAGAMENTO]`;
     
     return encodeURIComponent(mensagem);
 }
@@ -68,7 +70,7 @@ function mostrarModalProcessamento(pedido) {
             <div class="flex flex-col items-center">
                 <img src="logo-devburguer.ico" alt="" class="w-20 h-20 mb-4 animate-pulse">
                 <div class="swal2-loader"></div>
-                <p class="mt-3 text-gray-600">Aguarde enquanto preparamos seu hambúrguer</p>
+                <p class="mt-3 text-gray-600">Aguarde enquanto preparamos seu Pedido</p>
             </div>
         `,
         showConfirmButton: false,
@@ -113,7 +115,7 @@ function mostrarModalProcessamento(pedido) {
                 }).then((result) => {
                     if (result.isConfirmed) {
                         const mensagem = gerarMensagemWhatsApp(pedido);
-                        window.open(`https://wa.me/559285130951?text=${mensagem}`, '_blank');
+                        window.open(`https://wa.me/5547992070167?text=${mensagem}`, '_blank');
                         
                         productosEnCarrito = [];
                         localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));

@@ -4,11 +4,181 @@
         "titulo": "Xis salada - grande",
         "imagen": "./img/abrigos/Xis salada - grande.jpg",
         "categoria": {
-            "nombre": "Xis gaúcho",
+            "nombre": "Xis gaúcho 18cm - grande",
             "id": "abrigos"
         },
         "precio":  33
     },
+        {
+          "id": "abrigo-01",
+          "titulo": "Xis alcatra - grande",
+          "imagen": "./img/abrigos/xis_alcatra_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 41.00
+        },
+        {
+          "id": "abrigo-02",
+          "titulo": "Xis alcatra acebolada - grande",
+          "imagen": "./img/abrigos/xis_alcatra_acebolada_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 42.00
+        },
+        {
+          "id": "abrigo-03",
+          "titulo": "Xis alcatra com 4 queijos - grande",
+          "imagen": "./img/abrigos/xis_alcatra_4_queijos_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 47.00
+        },
+        {
+          "id": "abrigo-04",
+          "titulo": "Xis bacon - grande",
+          "imagen": "./img/abrigos/xis_bacon_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 42.00
+        },
+        {
+          "id": "abrigo-05",
+          "titulo": "Xis bacon com calabresa - grande",
+          "imagen": "./img/abrigos/xis_bacon_calabresa_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 46.00
+        },
+        {
+          "id": "abrigo-07",
+          "titulo": "Xis calabresa com hamburguer - grande",
+          "imagen": "./img/abrigos/xis_calabresa_hamburguer_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 45.00
+        },
+        {
+          "id": "abrigo-09",
+          "titulo": "Xis Duplo bacon - grande",
+          "imagen": "./img/abrigos/2grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 46.00
+        },
+        {
+          "id": "abrigo-011",
+          "titulo": "Xis frango com fritas - grande",
+          "imagen": "./img/abrigos/xis_frango_fritas_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 41.00
+        },
+        {
+          "id": "abrigo-012",
+          "titulo": "Xis frango com 4 queijos - grande",
+          "imagen": "./img/abrigos/xis_frango_4_queijos_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 44.00
+        },
+        {
+          "id": "abrigo-013",
+          "titulo": "Xis filé mignon de carne - grande",
+          "imagen": "./img/abrigos/xis_file_mignon_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 50.00
+        },
+        {
+          "id": "abrigo-014",
+          "titulo": "Xis picanha - grande",
+          "imagen": "./img/abrigos/xis_picanha_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 47.00
+        },
+        {
+          "id": "abrigo-015",
+          "titulo": "Pia kids (infantil) - grande",
+          "imagen": "./img/abrigos/pia_kids_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 23.00
+        },
+        {
+          "id": "abrigo-018",
+          "titulo": "Xis salada com fritas - grande",
+          "imagen": "./img/abrigos/xis_salada_com_fritas_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 43.00
+        },
+        {
+          "id": "abrigo-019",
+          "titulo": "Xis strogonofe de frango - grande",
+          "imagen": "./img/abrigos/xis_strogonoff_frango_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 43.00
+        },
+        {
+          "id": "abrigo-20",
+          "titulo": "Xis strogonofe de carne - grande",
+          "imagen": "./img/abrigos/xis_strogonoff_carne_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 45.00
+        },
+        {
+          "id": "abrigo-21",
+          "titulo": "Xis tudo (entrevero) - grande",
+          "imagen": "./img/abrigos/xis_tudo_entrevero_grande.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 48.00
+        },
+        {
+          "id": "abrigo-22",
+          "titulo": "Roda de carreta (Gigante) - Para toda a família",
+          "imagen": "./img/abrigos/roda_de_carreta_gigante.jpg",
+          "categoria": {
+            "nombre": "Xis gaúcho",
+            "id": "abrigos"
+          },
+          "precio": 150.00
+        },
     {
         "id": "Abrigo 02 ",
         "titulo": "Xis alcatra com 4 queijos - grande",
@@ -161,32 +331,172 @@
     },
     {
         "id": "pantalon-04",
-        "titulo": "Batata frita corte caseiro 300g",
+        "titulo": "Coca-Cola 600ml",
         "imagen": "./img/pantalones/04.jpg",
         "categoria": {
             "nombre": "Bebidas",
             "id": "pantalones"
         },
-        "precio": 21
+        "precio": 12
     },
     {
         "id": "pantalon-05",
-        "titulo": "Batata frita corte caseiro 600g",
+        "titulo": "Coca-Cola Zero 600ml",
         "imagen": "./img/pantalones/05.jpg",
         "categoria": {
             "nombre": "Bebidas",
             "id": "pantalones"
         },
-        "precio": 33
+        "precio": 12
     },
     {
         "id": "pantalon-06",
-        "titulo": "Polenta frita 500g",
+        "titulo": "Coca-Cola Lata 350ml",
         "imagen": "./img/pantalones/06.jpg",
         "categoria": {
             "nombre": "Bebidas",
             "id": "pantalones"
         },
+        "precio": 7
+    },
+    {
+        "id": "pantalon-07",
+        "titulo": "Coca-Cola Lata Zero 350ml",
+        "imagen": "./img/pantalones/07.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 7
+    },
+    {
+        "id": "pantalon-08",
+        "titulo": "AGUA SEM GAS",
+        "imagen": "./img/pantalones/08.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 5
+    },
+    {
+        "id": "pantalon-09",
+        "titulo": "AGUA COM GAS",
+        "imagen": "./img/pantalones/09.jpg",
+        "categoria": {
+            "nombre": "Bebidas",
+            "id": "pantalones"
+        },
+        "precio": 5
+    },
+    {
+        "id": "porcao-01",
+        "titulo": "Batata frita corte caseiro 300g",
+        "imagen": "./img/porcao/04.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
         "precio": 21
+    },
+    {
+        "id": "porcao-02",
+        "titulo": "Batata frita corte caseiro 600g",
+        "imagen": "./img/porcao/05.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 33
+    },
+    {
+        "id": "porcao-03",
+        "titulo": "Polenta frita 500g",
+        "imagen": "./img/porcao/06.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 21
+    },
+    {
+        "id": "porcao-04",
+        "titulo": "Batata corte caseiro com queijo 300g",
+        "imagen": "./img/porcao/07.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 26
+    },
+    {
+        "id": "porcao-05",
+        "titulo": "Batata corte caseiro com queijo 600g",
+        "imagen": "./img/porcao/07.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 40
+    },
+    {
+        "id": "porcao-06",
+        "titulo": "Batata corte caseiro com queijo e bacon 300g",
+        "imagen": "./img/porcao/08.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 32
+    },
+    {
+        "id": "porcao-07",
+        "titulo": "Batata corte caseiro com queijo e bacon 600g",
+        "imagen": "./img/porcao/08.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 47
+    },
+    {
+        "id": "porcao-08",
+        "titulo": "Batata com cheddar e bacon 300g",
+        "imagen": "./img/porcao/09.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 37
+    },
+    {
+        "id": "porcao-09",
+        "titulo": "Batata com cheddar e bacon 600g",
+        "imagen": "./img/porcao/00.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 57
+    },
+    {
+        "id": "porcao-10",
+        "titulo": "Mix de petiscos 2 pessoas",
+        "imagen": "./img/porcao/10.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 95
+    },
+    {
+        "id": "porcao-11",
+        "titulo": "Mix de petiscos 4 pessoas",
+        "imagen": "./img/porcao/11.jpg",
+        "categoria": {
+            "nombre": "porções",
+            "id": "porcao"
+        },
+        "precio": 135
     }
 ]

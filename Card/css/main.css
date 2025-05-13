@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 body{
-    background: url("shop/img/fondo.jpg");
+  background-color:rgb(7, 97, 54);
     background-size: cover;
     background-attachment: fixed;
     
@@ -400,11 +400,12 @@ main {
     }
 }
 .horario-container {
-    background-color: rgba(0, 0, 0, 0.507);
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 15px;
+    background-color: #ffffff60; /* Fundo suave */
+    border-radius: 10px;
+    margin: 15px;
     text-align: center;
-    margin-top: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.562);
 }
 
 .horario-texto {
@@ -412,3 +413,38 @@ main {
     font-weight: 500;
     font-size: 0.9rem;
 }
+
+.avaliacao-google {
+    padding: 15px;
+    background-color: #ffffff60; /* Fundo suave */
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estrelas {
+    font-size: 24px;
+    color: #fbbd08;
+  }
+  
+  .texto-avaliacao {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #333;
+  }
+  
+  .botao-avaliacoes {
+    display: inline-block;
+    padding: 7px 10px;
+    background-color: #4285F4;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .botao-avaliacoes:hover {
+    background-color: #357ae8;
+  }
